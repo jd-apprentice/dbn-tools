@@ -1,6 +1,6 @@
 ## 💻 dbn-tools is a command-line utility that helps you optimize and maintain your system.
 
-### 🔍 With dbn-tools, you can:
+## 🔍 With dbn-tools, you can:
 
 - Analyze disk usage and see which files and directories are taking up the most space.
 - Delete temporary files and free up space on your hard drive.
@@ -8,10 +8,6 @@
   Uninstall programs you no longer need.
 - Get detailed information about your CPU and system.
 - Check the usage of your system's RAM and swap memory.
-
-### 🚀 dbn-tools is easy to use and can help you keep your system running smoothly. Simply install the .deb package and run the command 'dbn-tools' to get started.
-
-### 💡 dbn-tools is an essential tool for any Linux user looking to optimize their system's performance.
 
 ![image](./readme.png)
 
