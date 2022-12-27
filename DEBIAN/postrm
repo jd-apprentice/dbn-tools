@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# We remove the symbolic link
+sudo rm -f /usr/bin/dbn-tools

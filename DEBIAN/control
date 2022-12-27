@@ -1,0 +1,8 @@
+Package: dbn-tools
+Version: 1.0
+Section: utils
+Priority: optional
+Architecture: all
+Depends: bash
+Maintainer: Jonathan Dyallo <contacto@jonathan.com.ar>
+Description: A utility to optimize the system performance
