@@ -31,12 +31,12 @@ case $option in
    2)
     # Delete the system's temporary files
     echo "Deleting temporary files..."
-    rm -rf /tmp/*
+    sudo rm -rf /tmp/*
     ;;
    3)
     # Empty the recycle bin
     echo "Emptying recycle bin..."
-    rm -rf ~/.local/share/Trash/*
+    sudo rm -rf ~/.local/share/Trash/*
     ;;
    4)
     # Ask the user to enter the name of the program to uninstall
