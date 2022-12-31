@@ -19,6 +19,8 @@
  ┃ ┣ 📜control
  ┃ ┣ 📜postinst
  ┃ ┗ 📜postrm
+ ┣ 📂utils
+ ┃ ┗ 📜debian_builder.sh
  ┣ 📂usr
  ┃ ┗ 📂bin
  ┃ ┃ ┗ 📜dbn-tools.sh
