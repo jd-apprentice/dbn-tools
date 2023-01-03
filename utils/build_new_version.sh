@@ -24,7 +24,6 @@ cd $copy
 
 # We remove git since we don't want it the final build
 rm -rf .git
-rm .gitignore
 
 # Move out of the copy directory
 cd ..
