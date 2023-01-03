@@ -2,3 +2,4 @@
 
 # We remove the symbolic link
 sudo rm -f /usr/bin/dbn-tools
+sudo rm -rf /usr/share/dbn-tools

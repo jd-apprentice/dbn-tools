@@ -8,3 +8,10 @@
 - Open a pull request with your branch
 - After the merge of your pull request is done, you can delete your branch
 - If you have any questions, please contact me at [email](mailto:contacto@jonathan.com.ar)
+
+## 📝 Build a new version
+
+If you are going to change a few things and want to build it to test if it works fine, you can build a new version yourself with the script inside the `utils` folder called `build_new_version.sh`
+
+- Remember to not include anything git related
+- Don't include anything sensitive
