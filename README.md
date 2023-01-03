@@ -19,14 +19,20 @@
  ┃ ┣ 📜control
  ┃ ┣ 📜postinst
  ┃ ┗ 📜postrm
- ┣ 📂utils
- ┃ ┗ 📜debian_builder.sh
  ┣ 📂usr
  ┃ ┗ 📂bin
+ ┃ ┃ ┣ 📂constants
+ ┃ ┃ ┃ ┗ 📜colors.sh
+ ┃ ┃ ┣ 📂functions
+ ┃ ┃ ┃ ┗ 📜uptime.sh
  ┃ ┃ ┗ 📜dbn-tools.sh
+ ┣ 📂utils
+ ┃ ┗ 📜debian_builder.sh
  ┣ 📜CONTRIBUTE.md
+ ┣ 📜INSTALL.md
  ┣ 📜LICENSE
- ┗ 📜README.md
+ ┣ 📜README.md
+ ┗ 📜readme.png
 ```
 
 ## 📁 Dependencies
