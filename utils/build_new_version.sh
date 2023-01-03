@@ -19,12 +19,15 @@ mkdir -p -- ../"$version-dbn-tools"
 copy=$(find $HOME -type d -name ${version}"-dbn-tools")
 cp -r $folder/* $copy
 
-# We move outside the directory and build the package
+# Move to the copy directory
 cd $copy
-cd ..
 
-dpkg --build "$version"-dbn-tools
-
-# # We remove git since we don't want it the final build
+# We remove git since we don't want it the final build
 rm -rf .git
 rm .gitignore
+
+# Move out of the copy directory
+cd ..
+
+# Build latest version of the package
+dpkg --build "$version"-dbn-tools
