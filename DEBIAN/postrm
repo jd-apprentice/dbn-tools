@@ -1,5 +1,7 @@
 #!/bin/bash
 
-# We remove the symbolic link
+# We remove everything we can from the user's home directory
 sudo rm -f /usr/bin/dbn-tools
+sudo rm -rf /usr/bin/functions
+sudo rm -rf /usr/bin/constants
 sudo rm -rf /usr/share/dbn-tools

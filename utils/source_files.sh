@@ -7,7 +7,7 @@ function SourceFiles() {
         return 1
     fi
 
-    for file in "$1"; do
+    for file in "$1"/*; do
         source "$file"
     done
 }

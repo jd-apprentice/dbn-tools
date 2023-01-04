@@ -3,11 +3,10 @@
 # Initialize the environment
 args=()
 prompt="Enter an option: "
-install_dir=$(pwd)
 
 # Source all the files
-. utils/source_files.sh
-SourceFiles "$install_dir"/usr/bin/functions && SourceFiles "$install_dir"/usr/bin/constants
+source utils/source_files.sh
+SourceFiles usr/bin/functions && SourceFiles usr/bin/constants
 
 # Iterate over all the arguments
 for arg in "$@"; do

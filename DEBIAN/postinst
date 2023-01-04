@@ -1,16 +1,14 @@
 #!/bin/bash
 
-# Create link symbolic link
-ln -s /usr/share/dbn-tools/dbn-tools.sh /usr/bin/dbn-tools
+# Create symbolic link
+sudo ln -s /usr/share/dbn-tools/usr/bin/dbn-tools.sh /usr/bin/dbn-tools
 
-# Create share directory
-sudo mkdir /usr/share/dbn-tools
+# Get the project in a more monkey-friendly way
+cd /usr/share
+git clone https://github.com/jd-apprentice/dbn-tools.git
 
-# Copy application to the executable directory
-sudo cp ./usr/bin/dbn-tools.sh /usr/share/dbn-tools/dbn-tools.sh
-
-# Give permissions to the application
-chmod +x /usr/share/dbn-tools/dbn-tools.sh
+# Give permissions to the application and source the files
+chmod -R 777 /usr/share/dbn-tools
 
 # Successfully installed the application, give message to the user
 echo "DBN Tools has been installed successfully!"

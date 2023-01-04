@@ -50,6 +50,7 @@
 ## 📁 Dependencies
 
 - Bash
+- Git
 
 ## 📁 Install
 
