@@ -5,8 +5,13 @@ args=()
 prompt="Enter an option: "
 
 # Source all the files
-source utils/source_files.sh
-SourceFiles usr/bin/functions && SourceFiles usr/bin/constants
+for file in /usr/bin/functions/* /usr/bin/constants/*; do
+  if [ -e "$file" ]; then
+    source "$file"
+  else
+    echo "Error: $file does not exist"
+  fi
+done
 
 # Iterate over all the arguments
 for arg in "$@"; do

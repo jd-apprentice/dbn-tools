@@ -16,7 +16,7 @@ function ReadPrompt() {
         ;;
     3)
 
-        DeleteTemporary
+        EmptyRecycleBin
         ;;
     4)
 

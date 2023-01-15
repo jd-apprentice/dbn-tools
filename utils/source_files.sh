@@ -1,5 +1,7 @@
 #!bin/bash
 
+### NOT BEING USED ATM ###
+
 # Source all the files given a path
 function SourceFiles() {
     if [[ $# -eq 0 ]]; then
