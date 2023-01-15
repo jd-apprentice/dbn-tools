@@ -16,3 +16,7 @@
 - Run the script with the path to the .deb file for example `./debian_builder.sh $HOME/Downloads/dbn-tools.deb`
 - Install the `debian_repacked.deb` package with `sudo dpkg -i debian_repacked.deb`
 - Run the package by typing `dbn-tools` in the terminal
+
+### 🇦 Arch
+
+- Not implemented yet

@@ -1,15 +1,29 @@
-## 💻 dbn-tools is a command-line utility that helps you optimize and maintain your system.
+# 💾 DBN-TOOLS
 
-## 🔍 With dbn-tools, you can:
+## 💻 With dbn-tools, you can:
 
-- Analyze disk usage and see which files and directories are taking up the most space.
-- Delete temporary files and free up space on your hard drive.
-- Empty the recycle bin to permanently delete files.
-  Uninstall programs you no longer need.
-- Get detailed information about your CPU and system.
-- Check the usage of your system's RAM and swap memory.
+- 🔍 Analyze disk usage and see which files and directories are taking up the most space.
+- 🗑️ Delete temporary files and free up space on your hard drive.
+- 🗑️ Empty the recycle bin to permanently delete files.
+- 🧹 Uninstall programs you no longer need.
+- 🧰 Get detailed information about your CPU and system.
+- 💾 Check the usage of your system's RAM and swap memory.
+- 🕰️ Check the system uptime.
+- 🔒 Check open ports.
+- 🔍 Search for a specific file.
 
 ![image](./readme.png)
+
+## 💾 Compatibility
+
+- Ubuntu 22.04 ✅
+- Debian 11 ✅
+- Arch ⭕ Not supported yet
+
+## 🏳️ Flags
+
+- `--help`: 📜 Display a help message with a list of all available options.
+- `--esp`: 🇪🇸 Enable Spanish translation.
 
 ## 📁 Folder structure
 
@@ -17,17 +31,15 @@
 📦dbn-tools
  ┣ 📂DEBIAN
  ┃ ┣ 📜control
- ┃ ┣ 📜postinst
- ┃ ┗ 📜postrm
  ┣ 📂usr
  ┃ ┗ 📂bin
  ┃ ┃ ┣ 📂constants
- ┃ ┃ ┃ ┗ 📜colors.sh
+ ┃ ┃ ┃ ┣ 📜ascii.sh
  ┃ ┃ ┣ 📂functions
- ┃ ┃ ┃ ┗ 📜uptime.sh
+ ┃ ┃ ┃ ┣ 📜delete-temp.sh
  ┃ ┃ ┗ 📜dbn-tools.sh
  ┣ 📂utils
- ┃ ┗ 📜debian_builder.sh
+ ┃ ┣ 📜build_new_version.sh
  ┣ 📜CONTRIBUTE.md
  ┣ 📜INSTALL.md
  ┣ 📜LICENSE
@@ -38,6 +50,7 @@
 ## 📁 Dependencies
 
 - Bash
+- Git
 
 ## 📁 Install
 

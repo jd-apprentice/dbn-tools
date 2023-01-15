@@ -1,5 +1,5 @@
 Package: dbn-tools
-Version: 1.2
+Version: 0.0.3
 Section: utils
 Priority: optional
 Architecture: all
