@@ -33,7 +33,7 @@ for arg in "$@"; do
 done
 
 # Display the menu options
-DisplayMenuOptions
+DisplayMenuOptions 2>/dev/null
 
 # Function that uses the switch case and reads the prompts given
-ReadPrompt
+ReadPrompt 2>/dev/null
