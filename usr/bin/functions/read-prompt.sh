@@ -8,39 +8,39 @@ function ReadPrompt() {
     case $option in
     1)
 
-        DiskUsage 2>/dev/null
+        DiskUsage
         ;;
     2)
 
-        DeleteTemporary 2>/dev/null
+        DeleteTemporary
         ;;
     3)
 
-        EmptyRecycleBin 2>/dev/null
+        EmptyRecycleBin
         ;;
     4)
 
-        UninstallPackage 2>/dev/null
+        UninstallPackage
         ;;
     5)
 
-        SystemInfo 2>/dev/null
+        SystemInfo
         ;;
     6)
 
-        MemoryUsage 2>/dev/null
+        MemoryUsage
         ;;
     7)
 
-        Uptime 2>/dev/null
+        Uptime
         ;;
     8)
 
-        OpenPorts 2>/dev/null
+        OpenPorts
         ;;
     9)
 
-        FindFile 2>/dev/null
+        FindFile
         ;;
     10)
 

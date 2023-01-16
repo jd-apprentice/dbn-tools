@@ -16,7 +16,7 @@ done
 # Iterate over all the arguments
 for arg in "$@"; do
   if [[ $arg == "--help" ]]; then
-    . usr/bin/constants/help.sh 2>/dev/null # Look for a way to not source this file again
+    . usr/bin/constants/help.sh # Look for a way to not source this file again
     for description in "${descriptions[@]}"; do
       echo "$description"
     done
@@ -33,7 +33,7 @@ for arg in "$@"; do
 done
 
 # Display the menu options
-DisplayMenuOptions 2>/dev/null
+DisplayMenuOptions
 
 # Function that uses the switch case and reads the prompts given
-ReadPrompt 2>/dev/null
+ReadPrompt
