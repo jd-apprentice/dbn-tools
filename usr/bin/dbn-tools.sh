@@ -5,7 +5,7 @@ args=()
 prompt="Enter an option: "
 
 # Source all the files
-for file in /usr/bin/functions/* /usr/bin/constants/*; do
+for file in /usr/bin/functions/* /usr/bin/constants/* usr/bin/functions/* usr/bin/constants/*; do
   if [ -e "$file" ]; then
     source "$file"
   else
