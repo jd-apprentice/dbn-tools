@@ -4,8 +4,12 @@
 args=()
 prompt="Enter an option: "
 
+
+
 # Source all the files
-for file in /usr/bin/functions/* /usr/bin/constants/* usr/bin/functions/* usr/bin/constants/*; do
+source /usr/bin/functions/*  2>temp.txt; grep -v "does not exist" temp.txt; rm temp.txt
+source /usr/bin/constants/* 2>temp.txt; grep -v "does not exist" temp.txt; rm temp.txt
+for file in usr/bin/functions/* usr/bin/constants/*; do
   if [ -e "$file" ]; then
     source "$file"
   else
