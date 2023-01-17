@@ -6,16 +6,20 @@ prompt="Enter an option: "
 
 
 
-# Source all the files
-source /usr/bin/functions/*  2>temp.txt; grep -v "does not exist" temp.txt; rm temp.txt
-source /usr/bin/constants/* 2>temp.txt; grep -v "does not exist" temp.txt; rm temp.txt
-for file in /usr/bin/functions/* /usr/bin/constants/* usr/bin/functions/* usr/bin/constants/*; do
-  if [ -e "$file" ]; then
-    source "$file"
-  else
-    echo "Error: $file does not exist"
-  fi
+# Source functions
+for file in $(find /usr/bin/functions/ -name '*.sh'); do
+    if [ -f "$file" ]; then
+        source "$file"
+    fi
 done
+
+# Source constants
+for file in $(find /usr/bin/constants/ -name '*.sh'); do
+    if [ -f "$file" ]; then
+        source "$file"
+    fi
+done
+
 
 # Iterate over all the arguments
 for arg in "$@"; do
