@@ -3,7 +3,7 @@
 # Display the menu options
 function DisplayMenuOptions() {
 
-    source usr/bin/constants/ascii.sh
+    source /usr/bin/constants/ascii.sh
 
     # Check if the language is Spanish
     if [[ $language == "esp" ]]; then
