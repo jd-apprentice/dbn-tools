@@ -23,7 +23,7 @@
 - Download the .deb package from the repository.
 - Install debtap with `yay -S debtap`
 - Update the database with `sudo debtap -u`
-- Build the package with `debtap <path-to-package>
+- Build the package with `debtap <path-to-package>`
 - Once we have the `tar.zst` file we are going to install it with pacman
-- Run `sudo pacman -U <path-to-tar-zst-file>
+- Run `sudo pacman -U <path-to-tar-zst-file>`
 - Run the package by typing `dbn-tools` in the terminal
