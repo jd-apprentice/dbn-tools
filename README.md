@@ -18,7 +18,7 @@
 
 - Ubuntu 22.04 ✅
 - Debian 11 ✅
-- Arch ⭕ Not supported yet
+- Arch ✅
 
 ## 🏳️ Flags
 
@@ -51,6 +51,7 @@
 
 - Bash
 - Git
+- Debtap (Arch)
 
 ## 📁 Install
 
