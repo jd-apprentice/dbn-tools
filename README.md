@@ -4,15 +4,21 @@
 
 - 🔍 Analyze disk usage and see which files and directories are taking up the most space.
 - 🗑️ Delete temporary files and free up space on your hard drive.
-- 🗑️ Empty the recycle bin to permanently delete files.
-- 🧹 Uninstall programs you no longer need.
-- 🧰 Get detailed information about your CPU and system.
 - 💾 Check the usage of your system's RAM and swap memory.
+- 🧰 Get detailed information about your CPU and system.
+- 🗑️ Empty the recycle bin to permanently delete files.
+- 🌧️ Check weather for you current location.
+- 🧹 Uninstall programs you no longer need.
+- 🔍 Search for a specific file.
 - 🕰️ Check the system uptime.
 - 🔒 Check open ports.
-- 🔍 Search for a specific file.
+
 
 ![image](./readme.png)
+
+## 💡 Ideas
+
+- New ideas are being tracked and added in this issue -> [Here](https://github.com/jd-apprentice/dbn-tools/issues/5)
 
 ## 💾 Compatibility
 
