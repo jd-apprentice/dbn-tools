@@ -4,7 +4,6 @@
 args=()
 prompt="Enter an option: "
 
-
 # Source functions
 for file in $(find /usr/bin/functions/ -name '*.sh'); do
     if [ -f "$file" ]; then
@@ -18,7 +17,6 @@ for file in $(find /usr/bin/constants/ -name '*.sh'); do
         source "$file"
     fi
 done
-
 
 # Iterate over all the arguments
 for arg in "$@"; do

@@ -40,9 +40,13 @@ function ReadPrompt() {
         ;;
     9)
 
-        FindFile
+        GetWeather
         ;;
     10)
+
+        FindFile
+        ;;
+    11)
 
         # Exit the application
         exit
