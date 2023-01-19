@@ -10,6 +10,7 @@ export descriptions=(
     "6) Memory usage - Displays information about memory usage, such as total, used, and free memory."
     "7) System uptime - Displays the amount of time the system has been running since the last boot."
     "8) Open ports - Displays a list of open network ports and their associated processes."
-    "9) Search for a file - Searches for a file by name or wildcard pattern."
-    "10) Exit - Exits the application."
+    "9) Get weather - Display a table with the current weather of your location." 
+    "10) Search for a file - Searches for a file by name or wildcard pattern."
+    "11) Exit - Exits the application."
 )
