@@ -1,7 +1,7 @@
 #!bin/bash
 
 # Generate random color
-random_color() {
+function random_color() {
     color=$((RANDOM % 6 + 1))
     case $color in
         1) echo -ne "\e[31m" ;; # red
