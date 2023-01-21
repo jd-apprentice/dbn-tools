@@ -5,7 +5,7 @@ sudo ln -s /usr/share/dbn-tools/usr/bin/dbn-tools.sh /usr/bin/dbn-tools
 
 # Get the project in a more monkey-friendly way
 cd /usr/share
-git clone -b develop https://github.com/jd-apprentice/dbn-tools.git
+git clone https://github.com/jd-apprentice/dbn-tools.git
 
 # Give permissions to the application and source the files
 chmod -R 777 /usr/share/dbn-tools

@@ -4,14 +4,15 @@
 args=()
 prompt="Enter an option: "
 
-# Source files
-for dir in '/usr/bin/functions/' '/usr/bin/constants/'; do
-    for file in $(find $dir -name '*.sh'); do
-        if [ -f "$file" ]; then
-            source "$file"
-        fi
-    done
+# Source functions
+for file in $(find /usr/bin/ -name '*.sh'); do
+    if [[ $file == *"functions"* ]]; then
+        source "$file"
+    elif [[ $file == *"constants"* ]]; then
+        source "$file"
+    fi
 done
+
 
 # Iterate over all the arguments
 for arg in "$@"; do
