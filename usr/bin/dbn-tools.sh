@@ -5,7 +5,7 @@ args=()
 prompt="Enter an option: "
 
 # Source files
-for dir in 'usr/bin/functions/' 'usr/bin/constants/'; do
+for dir in '/usr/bin/functions/' '/usr/bin/constants/'; do
     for file in $(find $dir -name '*.sh'); do
         if [ -f "$file" ]; then
             source "$file"
