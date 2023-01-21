@@ -12,5 +12,6 @@ export descriptions=(
     "8) Open ports - Displays a list of open network ports and their associated processes."
     "9) Get weather - Display a table with the current weather of your location." 
     "10) Search for a file - Searches for a file by name or wildcard pattern."
-    "11) Exit - Exits the application."
+    "11) USR-ARS Pair - Ask the value of the USD Dolar against the argentine PESO"
+    "12) Exit - Exit the application"
 )
