@@ -15,3 +15,11 @@ If you are going to change a few things and want to build it to test if it works
 
 - Remember to not include anything git related
 - Don't include anything sensitive
+
+## 📝 Notes to remember
+
+- When you are working locally you don't use absolute paths for example /usr/bin/functions since that one is going to be the final one for when the package is installed, instead you use usr/bin/functions since is part of the folder you are working on
+
+## 🔍 What language should I use?
+
+- Languages accepted at the moment are python and bash, if I find more ways to implement new ones for example javascript I will accept them, for now I'll go with what I consider stable
