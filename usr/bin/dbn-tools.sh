@@ -13,7 +13,6 @@ for dir in '/usr/bin/functions/' '/usr/bin/constants/'; do
     done
 done
 
-
 # Iterate over all the arguments
 for arg in "$@"; do
   if [[ $arg == "--help" ]]; then
