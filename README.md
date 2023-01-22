@@ -13,7 +13,6 @@
 - 🕰️ Check the system uptime.
 - 🔒 Check open ports.
 
-
 ![image](./readme.png)
 
 ## 💡 Ideas
@@ -22,9 +21,15 @@
 
 ## 💾 Compatibility
 
+- Docker ✅
 - Ubuntu 22.04 ✅
 - Debian 11 ✅
 - Arch ✅
+- Fedora ❌
+- Centos ❌
+- Gentoo ❌
+- openSUSE ❌
+- Slackware ❌
 
 ## 🏳️ Flags
 
@@ -35,6 +40,9 @@
 
 ```
 📦dbn-tools
+ ┣ 📂.github
+ ┃ ┗ 📂workflows
+ ┃ ┃ ┗ 📜codacy.yml
  ┣ 📂DEBIAN
  ┃ ┣ 📜control
  ┣ 📂usr
@@ -46,7 +54,9 @@
  ┃ ┃ ┗ 📜dbn-tools.sh
  ┣ 📂utils
  ┃ ┣ 📜build_new_version.sh
+ ┣ 📜.gitignore
  ┣ 📜CONTRIBUTE.md
+ ┣ 📜Dockerfile
  ┣ 📜INSTALL.md
  ┣ 📜LICENSE
  ┣ 📜README.md
@@ -58,6 +68,7 @@
 - Bash
 - Git
 - Debtap (Arch)
+- Python 3
 
 ## 📁 Install
 

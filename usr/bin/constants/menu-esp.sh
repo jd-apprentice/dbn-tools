@@ -1,3 +1,5 @@
+#!bin/bash
+
 export menu_options_spanish=(
     "1) Analizar uso del disco"
     "2) Eliminar archivos temporales"
