@@ -1,3 +1,5 @@
+#!bin/bash
+
 export menu_options=(
     "1) Analyze disk usage"
     "2) Delete temporary files"
