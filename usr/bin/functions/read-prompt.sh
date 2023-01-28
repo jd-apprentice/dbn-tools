@@ -1,8 +1,11 @@
 #!bin/bash
 
+# Python functions
+UsdArs="/usr/bin/functions/usd-ars.py"
+
 function ReadPrompt() {
     # Order is based on usr/bin/constants/menu.sh file, if you are going to edit something from here, edit it there too
-    options=(DiskUsage DeleteTemporary EmptyRecycleBin UninstallPackage SystemInfo MemoryUsage Uptime OpenPorts GetWeather FindFile "/usr/bin/functions/usd-ars.py" exit)
+    options=(DiskUsage DeleteTemporary EmptyRecycleBin UninstallPackage SystemInfo MemoryUsage Uptime OpenPorts GetWeather DownloadVideo FindFile $UsdArs exit)
 
     # Read the user's option
     read -p "$prompt" option
