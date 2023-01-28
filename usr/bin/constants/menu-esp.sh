@@ -10,7 +10,8 @@ export menu_options_spanish=(
     "7) Tiempo de actividad del sistema"
     "8) Puertos abiertos"
     "9) Clima actual"
-    "10) Buscar archivo"
-    "11) Dolar a pesos"
-    "12) Salir"
+    "10) Descargar Video YT" 
+    "11) Buscar archivo"
+    "12) Dolar a pesos"
+    "13) Salir"
 )
