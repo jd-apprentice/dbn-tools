@@ -10,7 +10,8 @@ export menu_options=(
     "7) System uptime"
     "8) Open ports"
     "9) Get current weather"
-    "10) Search for a file"
-    "11) USD-ARS Pair"
-    "12) Exit"
+    "10) Download YT Video"
+    "11) Search for a file"
+    "12) USD-ARS Pair"
+    "13) Exit"
 )
