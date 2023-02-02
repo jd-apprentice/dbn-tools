@@ -9,7 +9,9 @@
 - 🗑️ Empty the recycle bin to permanently delete files.
 - 🌧️ Check weather for you current location.
 - 🧹 Uninstall programs you no longer need.
+- 💵 Check local rate for USD-ARS.
 - 🔍 Search for a specific file.
+- 🍎 Download youtube videos.
 - 🕰️ Check the system uptime.
 - 🔒 Check open ports.
 
@@ -34,6 +36,7 @@
 ## 🏳️ Flags
 
 - `--help`: 📜 Display a help message with a list of all available options.
+- `--system || --sys`: 🖥 Filters the menu to only show system utility options.
 - `--esp`: 🇪🇸 Enable Spanish translation.
 
 ## 📁 Folder structure
