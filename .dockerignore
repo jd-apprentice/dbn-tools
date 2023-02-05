@@ -1,0 +1,5 @@
+error.log
+*.txt
+*.swp
+downloads
+*.md
