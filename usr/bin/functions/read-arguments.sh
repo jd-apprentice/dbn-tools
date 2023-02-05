@@ -5,7 +5,7 @@ function ReadArguments() {
     UsdArs="/usr/bin/functions/usd-ars.py"
 
     # Base options when no arguments is passed
-    options=(DiskUsage DeleteTemporary EmptyRecycleBin UninstallPackage SystemInfo MemoryUsage Uptime OpenPorts GetWeather DownloadVideo FindFile $UsdArs exit)
+    export options=(DiskUsage DeleteTemporary EmptyRecycleBin UninstallPackage SystemInfo MemoryUsage Uptime OpenPorts GetWeather DownloadVideo FindFile $UsdArs exit)
 
     local arguments="$1"
     for arg in "$arguments"; do
@@ -26,9 +26,9 @@ function ReadArguments() {
         fi
 
         # Menu choice for the system utilities
-        if [[ $arg == "--system" || $arg == "--sys" ]]; then
-            options=(DiskUsage SystemInfo UninstallPackage Uptime OpenPorts MemoryUsage exit)
-            menu_options=(
+        if [[ $arg == "--system" ]]; then
+            export options=(DiskUsage SystemInfo UninstallPackage Uptime OpenPorts MemoryUsage exit)
+            export menu_options=(
                 "1) Analyze disk usage"
                 "2) System information"
                 "3) Uninstall a package"
