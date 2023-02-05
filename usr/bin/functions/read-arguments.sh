@@ -19,8 +19,8 @@ function ReadArguments() {
 
         # Check if the language is Spanish
         if [[ $arg == "--esp" ]]; then
-            language="esp"
-            prompt="Ingrese una opción: "
+            export language="esp"
+            export prompt="Ingrese una opción: "
             menu_options=("${menu_options_spanish[@]}")
             continue
         fi
