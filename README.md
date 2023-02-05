@@ -17,6 +17,11 @@
 
 ![image](./readme.png)
 
+## 💾 Can I download the app?
+
+- Yes! releases are being published -> [HERE](https://github.com/jd-apprentice/dbn-tools/releases)
+- Check compatibility for your distro or look at the [INSTALL](./INSTALL.md) for detailed instructions
+
 ## 💡 Ideas
 
 - New ideas are being tracked and added in this issue -> [Here](https://github.com/jd-apprentice/dbn-tools/issues/5)
@@ -37,7 +42,11 @@
 
 - `--help`: 📜 Display a help message with a list of all available options.
 - `--system`: 🖥 Filters the menu to only show system utility options.
-- `--esp`: 🇪🇸 Enable Spanish translation.
+- `--esp`: 🇪🇸 Enable Spanish translation (WIP).
+
+## 📁 Application
+
+![APP](https://cdn.discordapp.com/attachments/875262629516546089/1071869885250011197/image.png)
 
 ## 📁 Folder structure
 

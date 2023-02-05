@@ -7,9 +7,14 @@
 - Copy the deb link for example `https://github.com/jd-apprentice/dbn-tools/releases/download/0.0.5/0.5-dbn-tools.deb`
 - Copy the name file in this case `0.5-dbn-tools.deb`
 - Then we can build our container with `docker compose up -d`
-- If neccesary you can run `dokcer compose up --build`
 - Once the container is running we can go inside with `docker exec -it dbn-tools-container bash`
 - And for the last part we can run the app with `dbn_tools`
+
+#### 🔬 Troubleshot
+
+- The container may not be working and if you try it to see the logs you see `dbn-tools command not found` ?
+- That may indicated that is neccesary to build it run the following command -> `dokcer compose up --build`
+- Once it reaches the end you can do `ctrl + c` to exit and run again `docker compose up -d` and `docker exec -it dbn-tools-container bash`
 
 ### 🤎 Ubuntu
 
