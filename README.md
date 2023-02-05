@@ -36,7 +36,7 @@
 ## 🏳️ Flags
 
 - `--help`: 📜 Display a help message with a list of all available options.
-- `--system || --sys`: 🖥 Filters the menu to only show system utility options.
+- `--system`: 🖥 Filters the menu to only show system utility options.
 - `--esp`: 🇪🇸 Enable Spanish translation.
 
 ## 📁 Folder structure
@@ -72,6 +72,13 @@
 - Git
 - Debtap (Arch)
 - Python 3
+
+## 🌴 Environment variables
+
+| Variable       | Description                                                                                   |
+| -------------- | --------------------------------------------------------------------------------------------- |
+| `DOWNLOAD_URL` | URL to download a package get it from here -> https://github.com/jd-apprentice/dbn-tools/tags |
+| `PACKAGE_NAME` | Name of the package being downloaded (is the name of the file from the other variable)        |
 
 ## 📁 Install
 

@@ -6,13 +6,9 @@
 - Go check the latest release from [TAGS](https://github.com/jd-apprentice/dbn-tools/tags)
 - Copy the deb link for example `https://github.com/jd-apprentice/dbn-tools/releases/download/0.0.5/0.5-dbn-tools.deb`
 - Copy the name file in this case `0.5-dbn-tools.deb`
-- Then we can build our image with `docker build --build-arg DOWNLOAD_URL=<deb-package-url> --build-arg PACKAGE_NAME=<deb-package-name> -t dbn-tools .`
-- And we finally run it with `docker run -it -e DOWNLOAD_URL=<deb-package-url> -e PACKAGE_NAME=<deb-package-name>`
-
-#### Example commands
-
-- Build -> `docker build --build-arg DOWNLOAD_URL=https://github.com/jd-apprentice/dbn-tools/releases/download/0.0.5/0.5-dbn-tools.deb --build-arg PACKAGE_NAME=./0.5-dbn-tools.deb -t dbn-tools .`
-- Run -> `docker run -it -e DOWNLOAD_URL=https://github.com/jd-apprentice/dbn-tools/releases/download/0.0.5/0.5-dbn-tools.deb -e PACKAGE_NAME=./0.5-dbn-tools.deb dbn-tools`
+- Then we can build our container with `docker compose up -d`
+- After running the container we can go inside with `docker exec -it dbn-tools-container bash`
+- And for the last part we can run the app with `dbn_tools`
 
 ### 🤎 Ubuntu
 

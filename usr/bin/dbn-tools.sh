@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Initialize the environment
-args=()
-prompt="Enter an option: "
+export args=()
+export prompt="Enter an option: "
 
 # Source functions
 for file in $(find /usr/bin/ -name '*.sh'); do
