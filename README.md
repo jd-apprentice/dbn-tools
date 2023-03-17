@@ -22,6 +22,10 @@
 - Yes! releases are being published -> [HERE](https://github.com/jd-apprentice/dbn-tools/releases)
 - Check compatibility for your distro or look at the [INSTALL](./INSTALL.md) for detailed instructions
 
+## 🌡 Want to see our metrics?
+
+We use codacy here is the [DASHBOARD](https://app.codacy.com/gh/jd-apprentice/dbn-tools/dashboard)
+
 ## 💡 Ideas
 
 - New ideas are being tracked and added in this issue -> [Here](https://github.com/jd-apprentice/dbn-tools/issues/5)
