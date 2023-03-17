@@ -82,6 +82,14 @@
 - Debtap (Arch)
 - Python 3
 
+## 🐍 Python dependencies
+
+- Requests
+
+## 🐛 Troubleshot
+
+For more information, check the [TROUBLESHOT](./TROUBLESHOT.md) file
+
 ## 🌴 Environment variables
 
 | Variable       | Description                                                                                   |
