@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Starting message
+echo "Building latest version of the package..."
+
 # Find version of the package and save it in a variable
 file=$(find . -name 'control')
 string="Version"
@@ -11,18 +14,19 @@ while read -r line; do
 done <$file
 
 # We locate where the folder is located and move to it
-folder=$(find $HOME -type d -name "dbn-tools")
+folder=$(find $HOME -type d -name "dbn-tools" -print | tail -n 1)
 cd $folder
 
 # We create a folder for the build and copy the entire file one level above
-mkdir -p -- ../"$version-dbn-tools"
+cd ..
+mkdir -p -- "$version-dbn-tools"
 copy=$(find $HOME -type d -name ${version}"-dbn-tools")
 cp -r $folder/* $copy
 
 # Move to the copy directory
 cd $copy
 
-# We remove git since we don't want it the final build
+# We remove git since we don't want it in the final build
 rm -rf .git
 
 # Move out of the copy directory
