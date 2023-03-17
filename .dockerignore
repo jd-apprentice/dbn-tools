@@ -1,5 +1,8 @@
-error.log
+*.log
 *.txt
 *.swp
-downloads
+*.github
 *.md
+downloads
+utils
+app

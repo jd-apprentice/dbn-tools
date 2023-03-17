@@ -1,6 +1,6 @@
-.swp
-.env
-error.log
-notes.txt
-.notes.txt.swp
+*.swp
+*.env
+*.log
+*.txt
 downloads
+app

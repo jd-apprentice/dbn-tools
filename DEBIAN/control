@@ -1,8 +1,8 @@
 Package: dbn-tools
-Version: 0.0.8
+Version: 0.0.9
 Section: utils
 Priority: optional
 Architecture: all
-Depends: bash
+Depends: bash, python3-pip, python3-dev
 Maintainer: Jonathan Dyallo <contacto@jonathan.com.ar>
 Description: A utility to optimize the system performance
