@@ -1,5 +1,7 @@
 # 💾 DBN-TOOLS
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/351a3c2dd6974f90a0cd0a00f7363801)](https://app.codacy.com/gh/jd-apprentice/dbn-tools?utm_source=github.com&utm_medium=referral&utm_content=jd-apprentice/dbn-tools&utm_campaign=Badge_Grade)
+
 ## 💻 With dbn-tools, you can:
 
 - 🔍 Analyze disk usage and see which files and directories are taking up the most space.
