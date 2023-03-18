@@ -21,7 +21,7 @@
 
 ## 📓 Documentation
 
-- Documentation is hosted on [GitHub Pages](https://dbn-tools.jonathan.com.ar/)
+- Documentation is hosted on [Here](https://dbn-tools.jonathan.com.ar/)
 
 ## 💾 Can I download the app?
 
