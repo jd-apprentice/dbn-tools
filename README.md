@@ -19,6 +19,10 @@
 
 ![image](./readme.png)
 
+## 📓 Documentation
+
+- Documentation is hosted on [GitHub Pages](https://jd-apprentice.github.io/dbn-tools-docs/)
+
 ## 💾 Can I download the app?
 
 - Yes! releases are being published -> [HERE](https://github.com/jd-apprentice/dbn-tools/releases)
