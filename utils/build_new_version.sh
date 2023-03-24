@@ -29,7 +29,7 @@ cd "$copy"
 # We remove git since we don't want it in the final build
 rm -rf .git
 rm readme.png
-rm *.md
+rm -- *.md
 
 # Move out of the copy directory
 cd ..
