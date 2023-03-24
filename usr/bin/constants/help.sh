@@ -14,5 +14,6 @@ export descriptions=(
     "10 Download YT Video - Downloads a video from youtube with the best possible size and quality by default" 
     "11) Search for a file - Searches for a file by name or wildcard pattern."
     "12) USR-ARS Pair - Ask the value of the USD Dolar against the argentine PESO"
-    "13) Exit - Exit the application"
+    "13) Ask GPT 3 - Ask anythig to the GPT 3 AI"
+    "14) Exit - Exit the application"
 )
