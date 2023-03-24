@@ -4,7 +4,7 @@
 function UninstallPackage() {
     read -p "Enter the name of the program to uninstall: " program
     echo "Uninstalling $program..."
-    sudo dpkg --purge $program
+    sudo dpkg --purge "$program"
 }
 
 export -f UninstallPackage
