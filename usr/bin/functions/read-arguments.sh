@@ -3,9 +3,10 @@
 function ReadArguments() {
     # Python functions (soon to be moved out)
     UsdArs="/usr/bin/functions/usd-ars.py"
+    AskGPT3="/usr/bin/functions/ask-gpt-3.py"
 
     # Base options when no arguments is passed
-    export options=(DiskUsage DeleteTemporary EmptyRecycleBin UninstallPackage SystemInfo MemoryUsage Uptime OpenPorts GetWeather DownloadVideo FindFile $UsdArs exit)
+    export options=(DiskUsage DeleteTemporary EmptyRecycleBin UninstallPackage SystemInfo MemoryUsage Uptime OpenPorts GetWeather DownloadVideo FindFile $UsdArs $AskGPT3 exit)
 
     local arguments="$1"
     for arg in "$arguments"; do
