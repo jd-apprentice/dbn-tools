@@ -13,5 +13,6 @@ export menu_options_spanish=(
     "10) Descargar Video YT" 
     "11) Buscar archivo"
     "12) Dolar a pesos"
-    "13) Salir"
+    "13) Pregunta a GPT 3"
+    "14) Salir"
 )

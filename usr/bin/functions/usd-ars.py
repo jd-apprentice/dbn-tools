@@ -28,9 +28,9 @@ def print_table(data):
 def main():
     getData(dolarAPI)
     table_data = [["💱 Currency", "💸 Value"],
-                  ["💵 Official", sackEmoji + str(arrData[0]["value_avg"]) + arsLabel],
+                  ["💵 Real", sackEmoji + str(arrData[0]["value_avg"]) + arsLabel],
                   ["💵 Blue", sackEmoji + str(arrData[1]["value_avg"]) + arsLabel],
-                  ["💶 Official_Euro", sackEmoji + str(arrData[2]["value_avg"]) + arsLabel],
+                  ["💶 Real_Euro", sackEmoji + str(arrData[2]["value_avg"]) + arsLabel],
                   ["💶 Blue_Euro", sackEmoji + str(arrData[3]["value_avg"]) + arsLabel]]
     print_table(table_data)
 

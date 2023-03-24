@@ -13,5 +13,6 @@ export menu_options=(
     "10) Download YT Video"
     "11) Search for a file"
     "12) USD-ARS Pair"
-    "13) Exit"
+    "13) Ask GPT 3"
+    "14) Exit"
 )

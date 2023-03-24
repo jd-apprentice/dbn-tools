@@ -89,12 +89,13 @@ We use codacy here is the [DASHBOARD](https://app.codacy.com/gh/jd-apprentice/db
 
 - Bash
 - Git
-- Debtap (Arch)
+- Debtap [Repository](https://github.com/helixarch/debtap)
 - Python 3
 
 ## 🐍 Python dependencies
 
-- Requests
+- Requests [Requests](https://pypi.org/project/requests/)
+- Openai [GPT-3](https://pypi.org/project/openai/)
 
 ## 🐛 Troubleshot
 
@@ -106,6 +107,14 @@ For more information, check the [TROUBLESHOT](./TROUBLESHOT.md) file
 | -------------- | --------------------------------------------------------------------------------------------- |
 | `DOWNLOAD_URL` | URL to download a package get it from here -> https://github.com/jd-apprentice/dbn-tools/tags |
 | `PACKAGE_NAME` | Name of the package being downloaded (is the name of the file from the other variable)        |
+| `GPT_KEY`      | Key to use GPT-3 API - Add it on your shell configuration                                     |
+
+```bash
+## For the `GPT_KEY` we are reading it from .bashrc or .zshrc depending on your shell
+## Add a line like this:
+
+GPT_KEY='YOUR_KEY'
+```
 
 ## 📁 Install
 
