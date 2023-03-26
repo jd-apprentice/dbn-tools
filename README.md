@@ -1,6 +1,7 @@
 # 💾 DBN-TOOLS
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/2780bebe8e2c4ec3abcc784b3d8f29c6)](https://app.codacy.com/gh/jd-apprentice/dbn-tools/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![DeepSource](https://deepsource.io/gh/jd-apprentice/dbn-tools.svg/?label=active+issues&show_trend=true&token=R5d9toJdoCzp6s2De2EUsQxk)](https://deepsource.io/gh/jd-apprentice/dbn-tools/?ref=repository-badge)
 
 ## 💻 With dbn-tools, you can:
 
@@ -31,10 +32,11 @@
 ## 🌡 Want to see our metrics?
 
 We use codacy here is the [DASHBOARD](https://app.codacy.com/gh/jd-apprentice/dbn-tools/dashboard)
+We also use deepsource here is the [DASHBOARD](https://deepsource.io/gh/jd-apprentice/dbn-tools)
 
 ## 💡 Ideas
 
-- New ideas are being tracked and added in this issue -> [Here](https://github.com/jd-apprentice/dbn-tools/issues/5)
+- New ideas are being tracked and added in this issue -> [Here](https://github.com/users/jd-apprentice/projects/3)
 
 ## 💾 Compatibility
 
@@ -124,9 +126,9 @@ You can see how to install it in the following file [INSTALL](./INSTALL.md).
 
 This project is under the MIT license. See the [LICENSE](./LICENSE) for more information.
 
-## 🤝 Contribute
+## 🤝 Contributing
 
-For more information, check the [CONTRIBUTE](./CONTRIBUTE.md) file
+For more information, check the [CONTRIBUTING](./CONTRIBUTING.md) file
 
 ## ✨ Contributors
 
