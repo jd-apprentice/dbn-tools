@@ -15,4 +15,4 @@ jobs:
 
       - name: Build
         run: |
-          ./utils/build_new_version.sh && cd .. && ls
+          ls
