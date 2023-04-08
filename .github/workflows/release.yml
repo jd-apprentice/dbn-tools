@@ -44,21 +44,23 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         env:
-          TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
           tag_name: v${{ github.run_number }}
           release_name: Release ${{ github.run_number }}
           body: |
-            Changes in this Release:
-            - Added new features
-            - Fixed some bugs
+            💻 A collection of system tools to optimize and improve your computer's performance.
+            🔍 Analyze disk usage, delete temporary files, empty recycle bin, and more!
+            🔧 Easy to use, with a simple command-line interface and clear instructions.
+            📦 Install as a .deb package and use from the terminal.
+            ⚡️ Keep your system running smoothly with dbn-tools!
           draft: false
           prerelease: false
 
       - name: Publish Release
         uses: actions/upload-release-asset@v1
         env:
-          TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
           upload_url: ${{ github.event.release.upload_url }}
           asset_path: ./$(find . -name "*.deb")
