@@ -17,10 +17,9 @@ jobs:
       - name: Checkout
         run: git clone https://github.com/jd-apprentice/dbn-tools.git && cd dbn-tools
 
-      - name: Execute Bash Script
+      - name: Get Package Version
+        id: get_version
         run: |
-          #!/bin/bash
-
           file=$(find . -name 'control')
           string="Version"
 
@@ -29,6 +28,12 @@ jobs:
                   version=${line:(-3):3}
               fi
           done <$file
+
+          echo "::set-output name=version::$version"
+
+      - name: Execute Bash Script
+        run: |
+          #!/bin/bash
 
           cd dbn-tools
 
