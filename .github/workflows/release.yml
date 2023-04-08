@@ -29,6 +29,8 @@ jobs:
               fi
           done <$file
 
+          echo $version
+
           echo "::set-output name=version::$version"
 
       - name: Execute Bash Script
