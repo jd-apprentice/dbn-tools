@@ -34,13 +34,15 @@ jobs:
 
           echo $version
 
-          ls
+          cd dbn-tools
 
-          # rm -rf .git
-          # rm -rf *.png
-          # rm -rf *.md
+          rm -rf .git
+          rm -rf *.png
+          rm -rf *.md
 
-          # dpkg --build "$version"-dbn-tools
+          cd ..
+
+          dpkg-deb -b dbn-tools "$version"-dbn-tools.deb
 
       # - name: Publish Release
       #   uses: actions/upload-release-asset@v1
