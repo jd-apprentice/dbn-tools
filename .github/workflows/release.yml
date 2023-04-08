@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Update package and install dpkg-dev
-        run: sudo apt-get update && sudo apt-get upgrade && sudo apt-get install -y dpkg-dev tree
+        run: sudo apt-get update && sudo apt-get install -y dpkg-dev
 
       - name: Checkout
         run: git clone https://github.com/jd-apprentice/dbn-tools.git && cd dbn-tools
@@ -33,7 +33,6 @@ jobs:
 
       - name: Execute Bash Script
         run: |
-          #!/bin/bash
 
           cd dbn-tools
 
@@ -52,7 +51,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
           tag_name: ${{ steps.get_version.outputs.version }}
-          release_name: Release ${{ steps.get_version.outputs.version }}
+          release_name: 📦 ${{ steps.get_version.outputs.version }}
           body: |
             💻 A collection of system tools to optimize and improve your computer's performance.
             🔍 Analyze disk usage, delete temporary files, empty recycle bin, and more!
