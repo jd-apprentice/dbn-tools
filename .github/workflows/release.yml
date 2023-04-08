@@ -40,12 +40,14 @@ jobs:
 
           cd "$folder"
 
-          cd ..
-          mkdir -p -- "$version-dbn-tools"
-          copy=$(find $HOME -type d -name ${version}"-dbn-tools")
-          cp -r $folder/* "$copy"
+          tree
 
-          cd "$copy"
+          # cd ..
+          # mkdir -p -- "$version-dbn-tools"
+          # copy=$(find $HOME -type d -name ${version}"-dbn-tools")
+          # cp -r $folder/* "$copy"
+
+          # cd "$copy"
 
           rm -rf .git
           rm -rf *.png
