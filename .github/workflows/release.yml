@@ -35,6 +35,9 @@ jobs:
           done <$file
 
           folder=$(find $HOME -type d -name "dbn-tools" -print | tail -n 1)
+
+          echo "found folder $folder"
+
           cd "$folder"
 
           cd ..
@@ -42,7 +45,7 @@ jobs:
           copy=$(find $HOME -type d -name ${version}"-dbn-tools")
           cp -r $folder/* "$copy"
 
-          # cd "$copy"
+          cd "$copy"
 
           rm -rf .git
           rm -rf *.png
