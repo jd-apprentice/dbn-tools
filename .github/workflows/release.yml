@@ -29,8 +29,6 @@ jobs:
               fi
           done <$file
 
-          echo $version
-
           echo "::set-output name=version::$version"
 
       - name: Execute Bash Script
@@ -44,7 +42,7 @@ jobs:
 
           cd ..
 
-          dpkg-deb -b dbn-tools "$version"-dbn-tools.deb
+          dpkg-deb -b dbn-tools "${{ steps.get_version.outputs.version }}"-dbn-tools.deb
 
       - name: Create Release
         id: create_release
