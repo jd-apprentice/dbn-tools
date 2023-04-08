@@ -46,8 +46,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
-          tag_name: v${{ github.run_number }}
-          release_name: Release ${{ github.run_number }}
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
           body: |
             💻 A collection of system tools to optimize and improve your computer's performance.
             🔍 Analyze disk usage, delete temporary files, empty recycle bin, and more!
