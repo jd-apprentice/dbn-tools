@@ -17,6 +17,10 @@ jobs:
       - name: Update package and install dpkg-dev
         run: sudo apt-get update && sudo apt-get install -y dpkg-dev
 
+      - name: debuging
+        run: |
+          ls
+
       - name: Build Package
         run: ./utils/build_new_version.sh
 
