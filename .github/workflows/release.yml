@@ -28,7 +28,7 @@ jobs:
         run: |
           echo "::set-output name=tag_name::$(cat VERSION)"
           echo "::set-output name=release_name::$(cat RELEASE_NAME)"
-      
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -40,12 +40,12 @@ jobs:
           draft: false
           prerelease: false
 
-        - name: Upload Release Asset
-          uses: actions/upload-release-asset@v1
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          with:
-            upload_url: ${{ steps.create_release.outputs.upload_url }}
-            asset_path: ../$(find .. -name "*.deb")
-            asset_name: ${{ steps.read_version.outputs.tag_name }}.deb
-            asset_content_type: application/vnd.debian.binary-package
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ../$(find .. -name "*.deb")
+          asset_name: ${{ steps.read_version.outputs.tag_name }}.deb
+          asset_content_type: application/vnd.debian.binary-package
