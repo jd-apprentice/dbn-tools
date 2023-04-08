@@ -34,20 +34,7 @@ jobs:
 
           echo $version
 
-          # folder=$(find $HOME -type d -name "dbn-tools" -print | tail -n 1)
-
-          # echo "found folder $folder"
-
-          # cd "$folder"
-
-          # tree
-
-          # cd ..
-          # mkdir -p -- "$version-dbn-tools"
-          # copy=$(find $HOME -type d -name ${version}"-dbn-tools")
-          # cp -r $folder/* "$copy"
-
-          # cd "$copy"
+          ls
 
           # rm -rf .git
           # rm -rf *.png
