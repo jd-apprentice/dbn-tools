@@ -14,8 +14,8 @@ jobs:
       - name: Update package and install dpkg-dev
         run: sudo apt-get update && sudo apt-get upgrade && sudo apt-get install -y dpkg-dev tree
 
-      - name: Checkout
-        run: git clone https://github.com/jd-apprentice/dbn-tools.git && cd dbn-tools
+      - name: Checkout code
+        uses: actions/checkout@v2
 
       - name: Execute Bash Script
         run: |
@@ -43,6 +43,12 @@ jobs:
           cd ..
 
           dpkg-deb -b dbn-tools "$version"-dbn-tools.deb
+
+          ls
+
+          cd ..
+
+          ls
 
       # - name: Publish Release
       #   uses: actions/upload-release-asset@v1
