@@ -17,39 +17,45 @@ jobs:
       - name: Update package and install dpkg-dev
         run: sudo apt-get update && sudo apt-get install -y dpkg-dev
 
-      - name: debuging
+      - name: Execute Bash Script
         run: |
-          ls
+          #!/bin/bash
 
-      # - name: Build Package
-      #   run: ./utils/build_new_version.sh
+          echo "Building latest version of the package..."
 
-      # - name: Move deb file
-      #   run: mv $(find . -name "*.deb") ../
+          file=$(find . -name 'control')
+          string="Version"
 
-      # - name: Read versioning name and release name
-      #   id: read_version
-      #   run: |
-      #     echo "::set-output name=tag_name::$(cat VERSION)"
-      #     echo "::set-output name=release_name::$(cat RELEASE_NAME)"
+          while read -r line; do
+              if [[ $line =~ $string ]]; then
+                  version=${line:(-3):3}
+              fi
+          done <$file
 
-      # - name: Create Release
-      #   id: create_release
-      #   uses: actions/create-release@v1
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   with:
-      #     tag_name: ${{ steps.read_version.outputs.tag_name }}
-      #     release_name: ${{ steps.read_version.outputs.release_name }}
-      #     draft: false
-      #     prerelease: false
+          folder=$(find $HOME -type d -name "dbn-tools" -print | tail -n 1)
+          cd "$folder"
 
-      # - name: Upload Release Asset
-      #   uses: actions/upload-release-asset@v1
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   with:
-      #     upload_url: ${{ steps.create_release.outputs.upload_url }}
-      #     asset_path: ../$(find .. -name "*.deb")
-      #     asset_name: ${{ steps.read_version.outputs.tag_name }}.deb
-      #     asset_content_type: application/vnd.debian.binary-package
+          cd ..
+          mkdir -p -- "$version-dbn-tools"
+          copy=$(find $HOME -type d -name ${version}"-dbn-tools")
+          cp -r $folder/* "$copy"
+
+          cd "$copy"
+
+          rm -rf .git
+          rm readme.png
+          rm -- *.md
+
+          cd ..
+
+          dpkg --build "$version"-dbn-tools
+
+      - name: Publish Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./$(find . -name "*.deb")
+          asset_name: ${{ github.event.release.tag_name }}.deb
+          asset_content_type: application/vnd.debian.binary-package
