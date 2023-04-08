@@ -21,8 +21,6 @@ jobs:
         run: |
           #!/bin/bash
 
-          echo "Building latest version of the package..."
-
           file=$(find . -name 'control')
           string="Version"
 
@@ -44,20 +42,12 @@ jobs:
 
           dpkg-deb -b dbn-tools "$version"-dbn-tools.deb
 
-          echo "Package built successfully!"
-
-          ls
-
-          cd ..
-
-          ls
-
-      # - name: Publish Release
-      #   uses: actions/upload-release-asset@v1
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   with:
-      #     upload_url: ${{ github.event.release.upload_url }}
-      #     asset_path: ./$(find . -name "*.deb")
-      #     asset_name: ${{ github.event.release.tag_name }}.deb
-      #     asset_content_type: application/vnd.debian.binary-package
+      - name: Publish Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./$(find . -name "*.deb")
+          asset_name: ${{ github.event.release.tag_name }}.deb
+          asset_content_type: application/vnd.debian.binary-package
