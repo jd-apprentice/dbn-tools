@@ -60,6 +60,8 @@ jobs:
 
           ls
 
+          cat PipelineFolder.json
+
           cd DEBIAN
 
           ls
