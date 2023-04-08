@@ -46,8 +46,6 @@ jobs:
           rm -rf *.png
           rm -rf *.md
 
-          cd ..
-
           tree
 
           dpkg --build "$version"-dbn-tools
