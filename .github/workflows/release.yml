@@ -40,13 +40,13 @@ jobs:
           copy=$(find $HOME -type d -name ${version}"-dbn-tools")
           cp -r $folder/* "$copy"
 
-          cd "$copy"
+          tree
+
+          # cd "$copy"
 
           rm -rf .git
           rm -rf *.png
           rm -rf *.md
-
-          tree
 
           dpkg --build "$version"-dbn-tools
 
