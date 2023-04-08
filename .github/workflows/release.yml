@@ -12,12 +12,10 @@ jobs:
 
     steps:
       - name: Update package and install dpkg-dev
-        run: sudo apt-get update && sudo apt-get install -y dpkg-dev tree
+        run: apt-get update && apt-get upgrade && sudo apt-get install -y dpkg-dev tree
 
       - name: Checkout
-        run: |
-          git clone https://github.com/jd-apprentice/dbn-tools.git
-          cd dbn-tools
+        run: git clone https://github.com/jd-apprentice/dbn-tools.git && cd dbn-tools
 
       - name: Execute Bash Script
         run: |
