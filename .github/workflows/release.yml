@@ -30,8 +30,6 @@ jobs:
               fi
           done <$file
 
-          echo $version
-
           cd dbn-tools
 
           rm -rf .git
@@ -42,10 +40,25 @@ jobs:
 
           dpkg-deb -b dbn-tools "$version"-dbn-tools.deb
 
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
+        with:
+          tag_name: v${{ github.run_number }}
+          release_name: Release ${{ github.run_number }}
+          body: |
+            Changes in this Release:
+            - Added new features
+            - Fixed some bugs
+          draft: false
+          prerelease: false
+
       - name: Publish Release
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOKEN: ${{ secrets.TOKEN }}
         with:
           upload_url: ${{ github.event.release.upload_url }}
           asset_path: ./$(find . -name "*.deb")
