@@ -23,8 +23,6 @@ jobs:
 
           echo "Building latest version of the package..."
 
-          tree
-
           file=$(find . -name 'control')
           string="Version"
 
@@ -34,13 +32,15 @@ jobs:
               fi
           done <$file
 
-          folder=$(find $HOME -type d -name "dbn-tools" -print | tail -n 1)
+          echo $version
 
-          echo "found folder $folder"
+          # folder=$(find $HOME -type d -name "dbn-tools" -print | tail -n 1)
 
-          cd "$folder"
+          # echo "found folder $folder"
 
-          tree
+          # cd "$folder"
+
+          # tree
 
           # cd ..
           # mkdir -p -- "$version-dbn-tools"
@@ -49,18 +49,18 @@ jobs:
 
           # cd "$copy"
 
-          rm -rf .git
-          rm -rf *.png
-          rm -rf *.md
+          # rm -rf .git
+          # rm -rf *.png
+          # rm -rf *.md
 
-          dpkg --build "$version"-dbn-tools
+          # dpkg --build "$version"-dbn-tools
 
-      - name: Publish Release
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ github.event.release.upload_url }}
-          asset_path: ./$(find . -name "*.deb")
-          asset_name: ${{ github.event.release.tag_name }}.deb
-          asset_content_type: application/vnd.debian.binary-package
+      # - name: Publish Release
+      #   uses: actions/upload-release-asset@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     upload_url: ${{ github.event.release.upload_url }}
+      #     asset_path: ./$(find . -name "*.deb")
+      #     asset_name: ${{ github.event.release.tag_name }}.deb
+      #     asset_content_type: application/vnd.debian.binary-package
