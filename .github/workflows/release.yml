@@ -43,8 +43,8 @@ jobs:
           cd "$copy"
 
           rm -rf .git
-          rm -- *.png
-          rm -- *.md
+          rm -rf *.png
+          rm -rf *.md
 
           cd ..
 
