@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-
       - name: Update package and install dpkg-dev
-        run: sudo apt-get update && sudo apt-get install -y dpkg-dev tree
+        run: sudo apt-get update && sudo apt-get install -y dpkg-dev git-all tree
+
+      - name: Checkout
+        run: |
+          git clone https://github.com/jd-apprentice/dbn-tools.git
+          cd dbn-tools
 
       - name: Execute Bash Script
         run: |
