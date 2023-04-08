@@ -20,12 +20,12 @@ jobs:
       - name: Get Package Version
         id: get_version
         run: |
-          file=$(find . -name 'control')
+          file=$(find ./dbn-tools/DEBIAN -name 'control')
           string="Version"
 
           while read -r line; do
               if [[ $line =~ $string ]]; then
-                  version=${line:(-3):3}
+                  version=${line:9}
               fi
           done <$file
 
