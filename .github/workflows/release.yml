@@ -43,8 +43,14 @@ jobs:
           cd "$copy"
 
           rm -rf .git
-          rm readme.png
-          rm -- *.md
+
+          if [ -e *.png ]; then
+              rm -- *.png
+          fi
+
+          if [ -e *.md ]; then
+              rm -- *.md
+          fi
 
           cd ..
 
