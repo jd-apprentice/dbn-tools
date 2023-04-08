@@ -23,6 +23,8 @@ jobs:
 
           echo "Building latest version of the package..."
 
+          tree
+
           file=$(find . -name 'control')
           string="Version"
 
@@ -39,8 +41,6 @@ jobs:
           mkdir -p -- "$version-dbn-tools"
           copy=$(find $HOME -type d -name ${version}"-dbn-tools")
           cp -r $folder/* "$copy"
-
-          tree
 
           # cd "$copy"
 
