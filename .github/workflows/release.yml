@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Update package and install dpkg-dev
-        run: apt-get update && apt-get upgrade && sudo apt-get install -y dpkg-dev tree
+        run: sudo apt-get update && sudo apt-get upgrade && sudo apt-get install -y dpkg-dev tree
 
       - name: Checkout
         run: git clone https://github.com/jd-apprentice/dbn-tools.git && cd dbn-tools
@@ -43,20 +43,12 @@ jobs:
           cd "$copy"
 
           rm -rf .git
-
-          if [ -e *.png ]; then
-              rm -- *.png
-          fi
-
-          if [ -e *.md ]; then
-              rm -- *.md
-          fi
+          rm -- *.png
+          rm -- *.md
 
           cd ..
 
           tree
-
-          cd "$version-dbn-tools"
 
           dpkg --build "$version"-dbn-tools
 
