@@ -62,3 +62,13 @@ jobs:
           prerelease: false
           files: |
             ${{ steps.get_version.outputs.version }}-dbn-tools.deb
+
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ${{ steps.get_version.outputs.version }}-dbn-tools.deb
+          asset_name: ${{ steps.get_version.outputs.version }}-dbn-tools.deb
+          asset_content_type: application/octet-stream
