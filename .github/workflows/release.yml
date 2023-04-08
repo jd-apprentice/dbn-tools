@@ -56,6 +56,16 @@ jobs:
 
           ls
 
+          cd "$version-dbn-tools"
+
+          ls
+
+          cd DEBIAN
+
+          ls
+
+          cat control
+
           dpkg --build "$version"-dbn-tools
 
       - name: Publish Release
