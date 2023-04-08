@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Update package and install dpkg-dev
-        run: sudo apt-get update && sudo apt-get install -y dpkg-dev git-all tree
+        run: sudo apt-get update && sudo apt-get install -y dpkg-dev tree
 
       - name: Checkout
         run: |
