@@ -60,3 +60,5 @@ jobs:
             ⚡️ Keep your system running smoothly with dbn-tools!
           draft: false
           prerelease: false
+          files: |
+            ${{ steps.get_version.outputs.version }}-dbn-tools.deb
