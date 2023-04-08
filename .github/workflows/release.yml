@@ -21,35 +21,35 @@ jobs:
         run: |
           ls
 
-      - name: Build Package
-        run: ./utils/build_new_version.sh
+      # - name: Build Package
+      #   run: ./utils/build_new_version.sh
 
-      - name: Move deb file
-        run: mv $(find . -name "*.deb") ../
+      # - name: Move deb file
+      #   run: mv $(find . -name "*.deb") ../
 
-      - name: Read versioning name and release name
-        id: read_version
-        run: |
-          echo "::set-output name=tag_name::$(cat VERSION)"
-          echo "::set-output name=release_name::$(cat RELEASE_NAME)"
+      # - name: Read versioning name and release name
+      #   id: read_version
+      #   run: |
+      #     echo "::set-output name=tag_name::$(cat VERSION)"
+      #     echo "::set-output name=release_name::$(cat RELEASE_NAME)"
 
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ steps.read_version.outputs.tag_name }}
-          release_name: ${{ steps.read_version.outputs.release_name }}
-          draft: false
-          prerelease: false
+      # - name: Create Release
+      #   id: create_release
+      #   uses: actions/create-release@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     tag_name: ${{ steps.read_version.outputs.tag_name }}
+      #     release_name: ${{ steps.read_version.outputs.release_name }}
+      #     draft: false
+      #     prerelease: false
 
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ../$(find .. -name "*.deb")
-          asset_name: ${{ steps.read_version.outputs.tag_name }}.deb
-          asset_content_type: application/vnd.debian.binary-package
+      # - name: Upload Release Asset
+      #   uses: actions/upload-release-asset@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+      #     asset_path: ../$(find .. -name "*.deb")
+      #     asset_name: ${{ steps.read_version.outputs.tag_name }}.deb
+      #     asset_content_type: application/vnd.debian.binary-package
