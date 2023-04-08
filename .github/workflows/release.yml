@@ -15,7 +15,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y dpkg-dev
 
       - name: Checkout
-        run: git clone https://github.com/jd-apprentice/dbn-tools.git && cd dbn-tools
+        run: git clone --branch test https://github.com/jd-apprentice/dbn-tools.git && cd dbn-tools
 
       - name: Get Package Version
         id: get_version
