@@ -57,12 +57,12 @@ jobs:
           draft: false
           prerelease: false
 
-      - name: Publish Release
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      - name: Upload Package
+        uses: "actions/http-request@v1"
         with:
-          upload_url: ${{ github.event.release.upload_url }}
-          asset_path: ./$(find . -name "*.deb")
-          asset_name: ${{ github.event.release.tag_name }}.deb
-          asset_content_type: application/vnd.debian.binary-package
+          url: "https://uploads.github.com/repos/${{ github.repository }}/releases/${{ github.event.release.id }}/assets?name=${{ github.event.release.tag_name }}.deb"
+          method: "POST"
+          headers: |
+            Authorization: Bearer ${{ secrets.TOKEN }}
+            Content-Type: application/octet-stream
+          body: ./$(find . -name "*.deb")
