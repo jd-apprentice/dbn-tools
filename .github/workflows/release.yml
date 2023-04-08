@@ -54,6 +54,8 @@ jobs:
 
           cd ..
 
+          ls
+
           dpkg --build "$version"-dbn-tools
 
       - name: Publish Release
