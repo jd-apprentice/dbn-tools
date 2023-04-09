@@ -12,8 +12,8 @@
 
 #### 🔬 Troubleshot
 
-- The container may not be working and if you try it to see the logs you see `dbn-tools command not found` ?
-- That may indicated that is neccesary to build it run the following command -> `dokcer compose up --build`
+- The container may not be working and if you try it to see the logs you see `dbn_tools command not found` ?
+- That may indicated that is neccesary to build it run the following command -> `docker compose up --build`
 - Once it reaches the end you can do `ctrl + c` to exit and run again `docker compose up -d` and `docker exec -it dbn-tools-container bash`
 
 ### 🤎 Ubuntu
