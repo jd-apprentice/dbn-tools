@@ -130,6 +130,10 @@ This project is under the MIT license. See the [LICENSE](./LICENSE) for more inf
 
 For more information, check the [CONTRIBUTING](./CONTRIBUTING.md) file
 
+Other projects were created based on this one!
+
+Here is an example [elo-tool](https://github.com/dev-eloy/elo-tool)
+
 ## ✨ Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
