@@ -3,6 +3,6 @@ Version: 0.1.1
 Section: utils
 Priority: optional
 Architecture: all
-Depends: python3-pip, python3-dev, openai
+Recommends: python3-pip, python3-dev, openai
 Maintainer: Jonathan Dyallo <contacto@jonathan.com.ar>
 Description: A utility to optimize the system performance

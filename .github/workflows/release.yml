@@ -3,6 +3,8 @@ name: Build Package
 on:
   push:
     branches: "master"
+  path:
+    - "usr/**"
 
 jobs:
   build:
