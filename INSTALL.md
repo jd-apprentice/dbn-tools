@@ -1,20 +1,11 @@
 ## 💡 Installation
 
-### 🐋 Docker
+### 🐧 AppImage
 
-- Clone the repository and make sure to be in the same folder as the `Dockerfile` which is in the root
-- Go check the latest release from [TAGS](https://github.com/jd-apprentice/dbn-tools/tags)
-- Copy the deb link for example `https://github.com/jd-apprentice/dbn-tools/releases/download/0.0.5/0.5-dbn-tools.deb`
-- Copy the name file in this case `0.5-dbn-tools.deb`
-- Then we can build our container with `docker compose up -d`
-- Once the container is running we can go inside with `docker exec -it dbn-tools-container bash`
-- And for the last part we can run the app with `dbn_tools`
-
-#### 🔬 Troubleshot
-
-- The container may not be working and if you try it to see the logs you see `dbn_tools command not found` ?
-- That may indicated that is neccesary to build it run the following command -> `docker compose up --build`
-- Once it reaches the end you can do `ctrl + c` to exit and run again `docker compose up -d` and `docker exec -it dbn-tools-container bash`
+- Tested on Linux Mint 21.2
+- Download the .AppImage package from the repository.
+- Give permissions to the package with `chmod +x ./dbn-tools.AppImage`
+- Run the package with `./dbn-tools.AppImage`
 
 ### 🤎 Ubuntu
 

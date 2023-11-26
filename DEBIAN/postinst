@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create symbolic link
-sudo ln -s /usr/share/dbn-tools/usr/bin/dbn-tools.sh /usr/bin/dbn-tools
+ln -s /usr/share/dbn-tools/usr/bin/dbn-tools.sh /usr/bin/dbn-tools
 
 # Get the project in a more monkey-friendly way
 cd /usr/share

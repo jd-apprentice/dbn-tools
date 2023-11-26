@@ -15,6 +15,14 @@ jobs:
       - name: Checkout
         run: git clone https://github.com/jd-apprentice/dbn-tools.git && cd dbn-tools
 
+      - name: Create AppImage
+        run: |
+          cd ..
+          wget "https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage"
+          chmod a+x appimagetool-x86_64.AppImage
+          ./appimagetool-x86_64.AppImage dbn-tools
+          cd dbn-tools
+
       - name: Get Package Version
         id: get_version
         run: |
@@ -58,6 +66,7 @@ jobs:
           prerelease: false
           files: |
             ${{ steps.get_version.outputs.version }}-dbn-tools.deb
+            ${{ steps.get_version.outputs.version }}-dbn-tools.AppImage
 
       - name: Upload Release Asset
         uses: actions/upload-release-asset@v1
