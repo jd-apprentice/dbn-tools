@@ -58,7 +58,6 @@ jobs:
           prerelease: false
           files: |
             ${{ steps.get_version.outputs.version }}-dbn-tools.deb
-            ${{ steps.get_version.outputs.version }}-dbn-tools.AppImage
 
       - name: Upload Release Asset
         uses: actions/upload-release-asset@v1
