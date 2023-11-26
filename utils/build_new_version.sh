@@ -30,7 +30,6 @@ cd "$copy"
 rm -rf .git
 rm LICENSE
 rm Makefile
-rm -- *.toml
 rm -- *.png
 rm -- *.md
 

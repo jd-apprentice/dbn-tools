@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=dbn-tools
+Icon=icon
+Type=Application
+Categories=Utility;
+Terminal=true
+X-AppImage-Version=0.1.1
